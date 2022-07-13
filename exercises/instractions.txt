@@ -1,0 +1,14 @@
+vagrant up
+bagrant ssh 
+curl -sfL https://get.k3s.io | sh -
+
+// install argocd 
+kubectl create namespace argocd
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+kubectl get po -n argocd
+kubectl get svc -n argocd
+kubectl get svc -n argocd argocd-server -o yaml > argocd-nodeport.yaml
+vi argocd-nodeport.yaml // edite file 
+kubectl apply -f argocd-nodeport.yaml
+kubectl get svc -n argocd //check
+kubectl apply -f argocd-nginx.yaml

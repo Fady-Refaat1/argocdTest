@@ -1,0 +1,14 @@
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.6:5000/ (Press CTRL+C to quit)
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2022 19:21:54] "GET /metrics HTTP/1.1" 200 -
+INFO:app:Main request successfull
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2022 19:21:58] "GET / HTTP/1.1" 200 -
+INFO:app:Main request successfull
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2022 19:22:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2022 19:23:17] "GET /metrics HTTP/1.1" 200 -
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://192.168.1.6:5000/ (Press CTRL+C to quit)
+INFO:app:metrics request successfull
+INFO:werkzeug:127.0.0.1 - - [10/Jul/2022 19:23:28] "GET /metrics HTTP/1.1" 200 -
